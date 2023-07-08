@@ -1,0 +1,30 @@
+{% extends 'dummy.html' %}
+{% load static %}
+
+{% block title %}
+<title>Home</title>
+<style>
+   center
+   {
+    background: rgb(49, 191, 226);
+    color: black;
+    margin-top: 100px;
+    background-color: rgb(238, 181, 74);
+    
+   }
+</style>
+    {% endblock %}
+   
+    {% block body_block %}
+    <center>
+        {% if username %}
+        
+        
+        <h1>Welocome mr/mrs {{username}}</h1>
+        {% else %}
+        <h1>Welcome to  home page</h1>
+        {% endif %}
+
+        
+    </center>
+    {% endblock %}
